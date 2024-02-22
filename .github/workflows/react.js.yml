@@ -22,6 +22,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: sudo su
+      - run: npm i parcel
       - run: rm -rf dist
       - run: npm run build
       - run: cd /var/www/dev-malviyalokesh.live/
