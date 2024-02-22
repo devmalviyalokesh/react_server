@@ -1,0 +1,6 @@
+# Excluding node modules
+node_modules/
+
+# Excluding parcel cache and dist
+.parcel-cache/
+dist/
