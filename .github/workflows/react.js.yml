@@ -28,4 +28,4 @@ jobs:
       - run: cd /var/www/dev-malviyalokesh.live/
       - run: rm -rf html/*
       - run: cd /home/ubuntu/actions-runner-ui-server/_work/react_server/react_server
-      - run: cp -a dist/. /var/www/dev-malviyalokesh.live/html/
+      - run: sudo cp -a dist/. /var/www/dev-malviyalokesh.live/html/
