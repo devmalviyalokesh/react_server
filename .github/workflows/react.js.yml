@@ -21,11 +21,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - run: sudo su
-      - run: npm i parcel
-      - run: rm -rf dist
+      - run: sudo npm i
+      - run: sudo rm -rf dist
       - run: npm run build
       - run: cd /var/www/dev-malviyalokesh.live/
-      - run: rm -rf html/*
+      - run: sudo rm -rf html/*
       - run: cd /home/ubuntu/actions-runner-ui-server/_work/react_server/react_server
       - run: sudo cp -a dist/. /var/www/dev-malviyalokesh.live/html/
