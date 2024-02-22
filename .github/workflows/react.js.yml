@@ -21,6 +21,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
+      - run: sudo su
       - run: npm ci
       - run: rm -rf dist
       - run: npm run build
